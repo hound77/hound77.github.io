@@ -20,28 +20,22 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> 
 
-    <!--added for timelime-->
-<!--upto here for timelime-->
+    <!-- Primary Meta Tags -->
+    <title>JWOC</title>
+    <link rel="icon" type="image/png" sizes="100x100" href="img/logo(1).png">
 
+    <link rel="icon" href="png/logo(1).png">
+    <!-- Fontawesome -->
+    <link type="text/css" href="../../vendor/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
 
-<!-- Primary Meta Tags -->
-<title>JWOC</title>
-<link rel="icon" type="image/png" sizes="100x100" href="img/logo(1).png">
-
-<link rel="icon" href="png/logo(1).png">
-<!-- Fontawesome -->
-<link type="text/css" href="../../vendor/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
-
-<!-- Pixel CSS -->
-<link type="text/css" href="style.css" rel="stylesheet">
-<link type="text/css" href="stylenav.css" rel="stylesheet">
-
-
-
-
-<!-- NOTICE: You can use the _analytics.html partial to include production code specific code & trackers -->
-
+    <!-- Pixel CSS -->
+    <link type="text/css" href="style.css" rel="stylesheet">
+    <link type="text/css" href="stylenav.css" rel="stylesheet">
+    
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.slick/1.5.0/slick.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.slick/1.5.0/slick-theme.css">
 </head>
 
 <body>
@@ -78,7 +72,7 @@
                         <div class="shrink_in">J.W.O.C</div>
                         <h1 class="h1 mb-4">JGEC WINTER OF CODE</h1>
                         <p class="lead mb-5 fade_in">
-                            JWoC ( JGEC Winter of Code) is a coding event organised by Developers' JGEC which helps students to plunge into Open Source contribution and get the realm of Software Development.
+                            JWoC ( JGEC Winter of Code) is a program organised by Developers JGEC in collaboration with Sristi 2020 which helps students to plunge into Open Source contribution and get the realm of Software Development.
                         </p>
                         <div id="typing_container">
                             <div id="typing_text_fixed">$</div><div id="typing_text"></div>
@@ -272,7 +266,7 @@
             <div class="timeline-flag-wrapper">
               <span class="timeline-hexagon"></span>
               <span class="time-wrapper" data-aos="zoom-in-right">
-                <span class="time alert shadow-inset  timelineyear"><b><strong style="font-size: large;" >2020</strong> <span class="timelinedate"><strong> December 26</strong> </span></b></span>
+                <span class="time alert shadow-inset  timelineyear"><b><strong style="font-size: large;" >2020</strong> <span class="timelinedate"><strong> December 25</strong> </span></b></span>
               </span>
             </div>
             <div class="desc timeline-neumorphism-card" data-aos="zoom-in-right">
@@ -289,7 +283,7 @@
               <div class="timeline-flag-wrapper">
                 <span class="timeline-hexagon"></span>
                 <span class="time-wrapper" data-aos="zoom-in-right">
-                  <span class="time alert shadow-inset  timelineyear"><b><strong style="font-size:large;" >2020</strong> <span class="timelinedate"><strong> December 26</strong> </span></b></span>
+                  <span class="time alert shadow-inset  timelineyear"><b><strong style="font-size:large;" >2020</strong> <span class="timelinedate"><strong> December 25</strong> </span></b></span>
                 </span>
               </div>
               <div class="desc timeline-neumorphism-card" data-aos="zoom-in-right">
@@ -732,22 +726,71 @@
                 </div>
             </div>
         </section>
+        <!--TEAM END-->        
+        
+        <!--SPONSOR-->
 
-
-
-        <!--TEAM END-->
-
-        <!--PROJECT-->
-
-        <!--TIMELINE-->
+        <div class="section-header pt-0 pb-4 overflow-hidden text-center " id="sponsors">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12 col-md-8">
+                        <div class="alert shadow-inset ">
+                                
+                            <h1>
+                                Our 
+                                <strong>Sponsors</strong>
+                            </h1>
+                           
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         
         
-
-
-
-
-        <!--TIMELINE END-->
         
+
+        <section class="slider container pt-5" id="app">
+          <div class="slide p-1 m-2" v-for="sp in sponsors">
+            <a  class="profile-card mb-5" :href="`${sp.link}`">
+                <div class="card bg-primary shadow-soft border-light">
+                    <div class="bg-primary shadow-inset border border-light rounded p-3 m-2 d-flex justify-content-center">
+                        <img :src="`img/sponsor/${sp.logo}`" class="card-img-top rounded" :alt="`${sp.name}`" style="height: 40px; width: auto;">
+                    </div>
+                    <div class="p-2 pt-0">
+                        <h3 class="h5 mb-2 text-center"><b>{{sp.name}}</b></h3>
+
+                    </div>
+                </div>
+            </a>
+
+
+          </div>   
+
+        </section>
+
+        <section class="slider container pt-5" id="apps">
+            <div class="slide p-1 m-2" v-for="sp in sponsors">
+              <a  class="profile-card mb-5" :href="`${sp.link}`">
+                  <div class="card bg-primary shadow-soft border-light">
+                      <div class="bg-primary shadow-inset border border-light rounded p-3 m-2 d-flex justify-content-center">
+                          <img :src="`img/sponsor/${sp.logo}`" class="card-img-top rounded" :alt="`${sp.name}`" style="height: 40px; width: auto;">
+                      </div>
+                      <div class="p-2 pt-0">
+                          <h3 class="h5 mb-2 text-center"><b>{{sp.name}}</b></h3>
+  
+                      </div>
+                  </div>
+              </a>
+  
+  
+            </div>
+               
+          </section>
+ 
+
+
+        <!--SPONSOR END-->
 
 
 
@@ -905,40 +948,19 @@
                         </a>
                     </li>
                     <li class="mr-2">
-                        <a href="https://github.com/JGEC-Winter-of-Code/" target="_blank" class="btn btn-icon-only btn-pill btn-primary" aria-label="github social link"
+                        <a href="https://github.com/JGEC-Winter-of-Code" target="_blank" class="btn btn-icon-only btn-pill btn-primary" aria-label="github social link"
                         data-toggle="tooltip" data-placement="top" title="Open source projects">
                             <span aria-hidden="true" class="fab fa-github"></span>
                         </a>
                     </li>
-                    <li class="mr-2">
+                    <li>
                         <a href="https://discord.com/download" target="_blank" class="btn btn-icon-only btn-pill btn-primary" aria-label="dribbble social link"
                         data-toggle="tooltip" data-placement="top" title="Follow us on Discord">
                             <span aria-hidden="true" class="fab fa-discord"></span>
                         </a>
                     </li>
-                    <li class="mr-2">
-                        <a href="https://www.linkedin.com/company/jwoc/" target="_blank" class="btn btn-icon-only btn-pill btn-primary" aria-label="dribbble social link"
-                        data-toggle="tooltip" data-placement="top" title="Follow us on Linkedin">
-                            <span aria-hidden="true" class="fab fa-linkedin"></span>
-                        </a>
-                    </li>
                 </ul>
             </div>
-
-
-            <div class="col-12 col-lg-3 mb-5 mb-lg-0" style="border-left: 1px solid #D3D3D3; 
-            height: 250px; ">
-                <h5>Sponsors</h5>
-                <p class="text-gray font-small mt-2">Cheers to our sponsors.</p>
-                <ul class="footer-links list-unstyled mt-2">
-                    <li class="mb-1">
-                        <a class="p-2" href="https://github.com/" target="_blank">Github</a>
-                    </li>
-                    <li class="mb-1">
-                        <a class="p-2" href="https://progate.com/" target="_blank">Progate</a>
-                    </li>
-                </ul>
-                </div>
         </div>
         <hr class="my-5">
         <div class="row">
@@ -950,7 +972,6 @@
                 <p class="font-weight-normal font-small mb-0">Copyright © JWOC
                     <span class="current-year">2020</span>. All rights reserved.</p>
                 </div>
-              
             </div>
         </div>
     </div>
@@ -960,6 +981,131 @@
     <script src="contact_min.js"></script>
     <script src="contact_bootstrap.min.js"></script>
     <script async defer src="https://buttons.github.io/buttons.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.slick/1.5.0/slick.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
+    <script type="text/javascript">
+        var app = new Vue({
+          el:'#app',
+          data:{ 
+          sponsors:[
+            {
+                name: 'Coding Ninjas',
+                link: 'https://www.codingninjas.com/',
+                logo: 'CNLOGO.SVG'
+            },
+            {
+                name: 'Reboot Marketing',
+                link: 'https://www.rebootmarketing.in/',
+                logo: 'rm.png'
+            },
+            {
+                name: 'Axure',
+                link: 'https://www.axure.com/',
+                logo: 'axure.svg'
+            },
+            {
+                name: 'Microsoft student partner',
+                link: 'https://studentambassadors.microsoft.com/',
+                logo: 'msp.png'
+            },
+            {
+                name: 'Coding Blocks',
+                link: 'https://codingblocks.com/',
+                logo: 'cb.png'
+            },
+            {
+                name: 'A2 Hosting',
+                link: 'https://www.a2hosting.com/',
+                logo: 'a2.webp'
+            }
+          ]
+        },
+        methods:{
+    
+          },
+    
+        });
+           
+    </script>
+    <script type="text/javascript">
+        var apps = new Vue({
+          el:'#apps',
+          data:{ 
+          sponsors:[
+            {
+                name: 'Merge interns',
+                link: 'https://www.mergeintern.com/',
+                logo: 'Mint.svg'
+            },
+            {
+                name: 'Commudle',
+                link: 'https://commudle.com/',
+                logo: 'cmmdle.jpeg'
+            },
+            {
+                name: 'Girlscript',
+                link: 'https://www.girlscript.tech/home',
+                logo: 'gst.png'
+            },
+            {
+                name: 'Give My Certificate',
+                link: 'https://givemycertificate.com/',
+                logo: 'gmc.png'
+            },
+            {
+                name: 'Jet Brains',
+                link: 'https://www.jetbrains.com/',
+                logo: 'jb.png'
+            },
+            {
+                name: 'bade log',
+                link: 'http://badelog.in/',
+                logo: 'bdl.jpeg'
+            }
+          ]
+        },
+        methods:{
+    
+          },
+    
+        });
+           
+    </script>
+    <script type="text/javascript">
+     
+    
+            $('.slider').slick({
+              centerMode: true,
+                    autoplay:true,
+                    autoplaySpeed:1000,
+                    centerPadding: '60px',
+                    slidesToShow: 3,
+                    pauseOnHover: false,
+                    autoplay: true,
+                    centerMode: true,
+              responsive: [
+                {
+                  breakpoint: 1000,
+                  settings: {
+                    arrows: false,
+                    centerMode: true,
+                    centerPadding: '40px',
+                    slidesToShow: 2
+                  }
+                },
+                {
+                  breakpoint: 800,
+                  settings: {
+                    arrows: false,
+                    centerMode: true,
+                    centerPadding: '40px',
+                    slidesToShow: 1
+                  }
+                }
+              ]
+            });
+    </script>
 
     
     <script type="text/javascript">

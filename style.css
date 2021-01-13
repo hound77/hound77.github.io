@@ -811,30 +811,6 @@ body {
     -webkit-mask-position: -50%;
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
-
-
-
 }
 
 
@@ -1208,7 +1184,9 @@ h6, .h6 {
     justify-content: center;
     align-items: center;
     padding-left: 2rem;
-    font-size: 110px; margin:auto; font-weight: 300;
+    font-size: calc( 15px + 5vw );
+    margin:auto; 
+    font-weight: 300;
     letter-spacing: 2rem;
     -webkit-animation: shrink 2s; /* Safari, Chrome and Opera > 12.1 */
     -moz-animation: shrink 2s; /* Firefox < 16 */
