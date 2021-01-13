@@ -20,7 +20,6 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> 
 
     <!-- Primary Meta Tags -->
     <title>JWOC</title>
@@ -751,7 +750,7 @@
         
         
 
-        <section class="slider container pt-5" id="app">
+        <section class="slider slider-wrapper container pt-5" id="app">
           <div class="slide p-1 m-2" v-for="sp in sponsors">
             <a  class="profile-card mb-5" :href="`${sp.link}`">
                 <div class="card bg-primary shadow-soft border-light">
@@ -770,7 +769,7 @@
 
         </section>
 
-        <section class="slider container pt-5" id="apps">
+        <section class="slider slider-wrapper container pt-5" id="apps">
             <div class="slide p-1 m-2" v-for="sp in sponsors">
               <a  class="profile-card mb-5" :href="`${sp.link}`">
                   <div class="card bg-primary shadow-soft border-light">
@@ -1098,7 +1097,7 @@
                     arrows: false,
                     centerMode: true,
                     centerPadding: '40px',
-                    slidesToShow: 2
+                    slidesToShow: 1
                   }
                 },
                 {
