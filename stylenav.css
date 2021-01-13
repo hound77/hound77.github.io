@@ -103,11 +103,7 @@ header.sticky .logo{
 
 header.sticky .jgec{
     color: #93a5be;
-}
-header.sticky ul li a{
-    color:white;
-}
-
+} 
 header.sticky.dropdown-content
 {
     background-color: bisque;
@@ -164,9 +160,16 @@ header.sticky .links:hover{
   .dropdown:hover .dropdown-content {display: flex;flex-direction: column;overflow: hidden;}
 
   
+    header.sticky ul li a{
+        color:white;
+    }
 
-@media (max-width: 991px)
+@media (max-width: 1291px)
 {
+
+    header.sticky ul li a{
+        color:#000;
+    }
     header,
     header.sticky{
         padding:20px 50px;
@@ -180,7 +183,7 @@ header.sticky .links:hover{
         position:fixed;
         background:rgb(236, 226, 226);
         display:block;
-        top:75px;
+        top:65px;
         left:-100%;
         padding:100px 50px;
         width:100%;
@@ -191,11 +194,12 @@ header.sticky .links:hover{
         -webkit-transition:0.5s;
         -moz-transition:0.5s;
         -ms-transition:0.5s;
+        background: transparent;
         -o-transition:0.5s;
 }
     header .menu.active{
         position: fixed;
-        top: 79px;
+        /*top: 79px;*/
         left: 0;
         padding: 100px 50px;
         display: block;
@@ -203,6 +207,7 @@ header.sticky .links:hover{
         width: 100%;
         height: 100vh;
         background: rgb(243, 238, 238);
+        color: #000;
     }
     header ul li a{
         font-size: 20px;
