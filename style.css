@@ -1502,7 +1502,7 @@ pre code {
     transition: 1s;
 }
 .projectbx:hover{
-    transform: scale(1.07);
+    transform: scale(1.05);
     
     z-index: 1.5;
 }

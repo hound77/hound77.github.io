@@ -19,40 +19,44 @@
 
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<!-- Primary Meta Tags -->
-<title>PROJECT</title>
 
 
-<!-- Fontawesome -->
-<link type="text/css" href="../../vendor/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
+    <!-- Primary Meta Tags -->
+    <title>JWOC</title>
+    <link rel="icon" type="image/png" sizes="100x100" href="img/logo(1).png">
 
-<!-- Pixel CSS -->
-<link type="text/css" href="style.css" rel="stylesheet">
-<link type="text/css" href="stylenav.css" rel="stylesheet">
+    <link rel="icon" href="png/logo(1).png">
+    <!-- Fontawesome -->
+    <link type="text/css" href="../../vendor/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
 
-<!-- NOTICE: You can use the _analytics.html partial to include production code specific code & trackers -->
-
+    <!-- Pixel CSS -->
+    <link type="text/css" href="style.css" rel="stylesheet">
+    <link type="text/css" href="stylenav.css" rel="stylesheet">
+    
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.slick/1.5.0/slick.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.slick/1.5.0/slick-theme.css">
 </head>
 
 <body>
     <header class="head" >
-        <a href="#" class="logo"><span class="logo-hover"><span class="jgec"><strong>JGEC</strong></span>Winter Of Code</span></a>
+        <a href="index.html" class="logo"><span class="logo-hover"><span class="jgec" style="font-weight: 600;">JGEC</span>Winter Of Code</span></a>
         <div class="toggle" onclick="toggleMenu();"></div>
         
-        <ul class="menu">
+        <ul class="menu" style="margin-bottom: 0px;">
             
-            <li><a href="#about"  onclick="toggleMenu();"><span class="links">ABOUT</span></a></li>
-            <li><a href="#register"  onclick="toggleMenu();"><span class="links">REGISTER</span></a></li>
-            <li><a href="#timeline"  onclick="toggleMenu();"><span class="links">TIMELINE</span></a></li>
-            <li><a href="#projects"  onclick="toggleMenu();"><span class="links">PROJECTS</span></a></li>
-            <li><a href="#team"  onclick="toggleMenu();"><span class="links">TEAM</span></a></li>
-            <li><a href="#contact"  onclick="toggleMenu();"><span class="links">CONTACT US</span></a></li>
+            <li><a href="/index.html#about"  onclick="toggleMenu();" ><span class="links">ABOUT</span></a></li>
+            <li><a href="/index.html#register"  onclick="toggleMenu();"><span class="links">REGISTER</span></a></li>
+            <li><a href="/index.html#timeline"  onclick="toggleMenu();"><span class="links">TIMELINE</span></a></li>
+            <li><a href="/index.html#project"  onclick="toggleMenu();"><span class="links">PROJECTS</span></a></li>
+            <li><a href="/index.html#team"  onclick="toggleMenu();"><span class="links">TEAM</span></a></li>
+            <li><a href="/index.html#sponsors"  onclick="toggleMenu();"><span class="links">SPONSORS</span></a></li>
+            <li><a href="/index.html#contact"  onclick="toggleMenu();"><span class="links">CONTACT US</span></a></li>
             <li class="dropdown">
-                <a href="#" class="dropbtn links" >MORE<span class="fas fa-angle-down nav-link-arrow ml-2"></span></a>
+                <a href="#" class="dropbtn links" ><b>MORE</b><span class="fas fa-angle-down nav-link-arrow ml-2"></span></a>
                 <ul class="dropdown-content">
-                  <a href="#">Leaderboard</a>
-                  <a href="#faq">FAQ</a>
-                  <a href="#">Code of Conduct</a>
+                  <a href="./Coming_Soon/index.html">Leaderboard</a>
+                  <a href="/index.html#faq">FAQ</a>
+                  <a href="./assets/jwoc20_code_of_conduct.pdf" download="JWoC_Code_of_Conduct" target="blank">Code of Conduct</a>
                 </ul>
             </li> 
         </ul>
@@ -80,9 +84,9 @@
             <div class="container" class="projects" > 
                 <div class="row align-items-center">
                     
-                    <div class="col-md-6 col-lg-4 text-center projectbx">
+                    <div class="col-md-6 col-lg-4 text-center ">
                         <div class="card bg-primary shadow-soft border-light mb-4">
-                            <div class="card-body py-4">
+                            <div class="card-body py-4 projectbx">
                                 <img src="img/northwestern.svg" class="img-fluid image-sm mb-5" alt="ebay logo">
                                 <br>
                                     <large class="text-muted mt-3" style="width: 200px;"><strong>Tech Stack : </strong></large>
@@ -94,15 +98,15 @@
                                     <span class="badge badge-behance text-uppercase">python</span>    
                                 </br>
                                 <p class="card-text py-2 mb-0">Some quick example text to build on the card title and make up the bulk of the card's content preview .</p>
-                                <a href="#" class="btn btn-primary text-dark btn-icon mu-5">
+                                <a href="https://github.com/iharshit009/SecretPeek" class="btn btn-primary text-dark btn-icon mu-5">
                                     <span class="btn-inner-icon"><span class="far fa-eye"></span></span>
                                     <span class="btn-inner-text font-weight-bold">See project</span>
                                 </a>
                                 
                                     <ul class="footer-links list-unstyled mt-4">
                                     <li class="col-lg-12 d-block d-md-flex justify-content-around"> 
-                                        <a   href="https://gogoanime.so/fullmetal-alchemist-brotherhood-episode-11"> 
-                                        <img class="avatar-sm mr-2 img-fluid rounded-circle" src="img/profile-picture-2.jpg" alt="Moore avatar">yogesh kumar jha
+                                        <a   href="https://github.com/iharshit009"> 
+                                        <img class="avatar-sm mr-2 img-fluid rounded-circle" src="img/gitcat.png" alt="Moore avatar">Harshit Jain
                                         </a>
                                     </li>
                                 </ul>
@@ -110,606 +114,10 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6 col-lg-4 text-center projectbx">
-                        <div class="card bg-primary shadow-soft border-light mb-4">
-                            <div class="card-body py-4">
-                                <img src="img/northwestern.svg" class="img-fluid image-sm mb-5" alt="ebay logo">
-                                <br>
-                                    <large class="text-muted mt-3" style="width: 200px;"><strong>Tech Stack : </strong></large>
-                                    <span class="badge badge-secondary text-uppercase">Django </span>
-                                    <span class="badge badge-dark text-uppercase">flask </span>
-                                    <span class="badge badge-secondary text-uppercase">python</span>
-                                    <span class="badge badge-success text-uppercase">ml</span>
-                                    <span class="badge badge-danger text-uppercase">Git</span>
-                                    <span class="badge badge-behance text-uppercase">python</span>    
-                                </br>
-                                <p class="card-text py-2 mb-0">Some quick example text to build on the card title and make up the bulk of the card's content preview .</p>
-                                <a href="#" class="btn btn-primary text-dark btn-icon mu-5">
-                                    <span class="btn-inner-icon"><span class="far fa-eye"></span></span>
-                                    <span class="btn-inner-text font-weight-bold">See project</span>
-                                </a>
-                                
-                                    <ul class="footer-links list-unstyled mt-4">
-                                    <li class="col-lg-12 d-block d-md-flex justify-content-around"> 
-                                        <a   href="https://gogoanime.so/fullmetal-alchemist-brotherhood-episode-11"> 
-                                        <img class="avatar-sm mr-2 img-fluid rounded-circle" src="img/profile-picture-2.jpg" alt="Moore avatar">yogesh kumar jha
-                                        </a>
-                                    </li>
-                                </ul>
-                               
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 text-center projectbx">
-                        <div class="card bg-primary shadow-soft border-light mb-4">
-                            <div class="card-body py-4">
-                                <img src="img/northwestern.svg" class="img-fluid image-sm mb-5" alt="ebay logo">
-                                <br>
-                                    <large class="text-muted mt-3" style="width: 200px;"><strong>Tech Stack : </strong></large>
-                                    <span class="badge badge-secondary text-uppercase">Django </span>
-                                    <span class="badge badge-dark text-uppercase">flask </span>
-                                    <span class="badge badge-secondary text-uppercase">python</span>
-                                    <span class="badge badge-success text-uppercase">ml</span>
-                                    <span class="badge badge-danger text-uppercase">Git</span>
-                                    <span class="badge badge-behance text-uppercase">python</span>    
-                                </br>
-                                <p class="card-text py-2 mb-0">Some quick example text to build on the card title and make up the bulk of the card's content preview .</p>
-                                <a href="#" class="btn btn-primary text-dark btn-icon mu-5">
-                                    <span class="btn-inner-icon"><span class="far fa-eye"></span></span>
-                                    <span class="btn-inner-text font-weight-bold">See project</span>
-                                </a>
-                                
-                                    <ul class="footer-links list-unstyled mt-4">
-                                    <li class="col-lg-12 d-block d-md-flex justify-content-around"> 
-                                        <a   href="https://gogoanime.so/fullmetal-alchemist-brotherhood-episode-11"> 
-                                        <img class="avatar-sm mr-2 img-fluid rounded-circle" src="img/profile-picture-2.jpg" alt="Moore avatar">yogesh kumar jha
-                                        </a>
-                                    </li>
-                                </ul>
-                               
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 text-center projectbx">
-                        <div class="card bg-primary shadow-soft border-light mb-4">
-                            <div class="card-body py-4">
-                                <img src="img/northwestern.svg" class="img-fluid image-sm mb-5" alt="ebay logo">
-                                <br>
-                                    <large class="text-muted mt-3" style="width: 200px;"><strong>Tech Stack : </strong></large>
-                                    <span class="badge badge-secondary text-uppercase">Django </span>
-                                    <span class="badge badge-dark text-uppercase">flask </span>
-                                    <span class="badge badge-secondary text-uppercase">python</span>
-                                    <span class="badge badge-success text-uppercase">ml</span>
-                                    <span class="badge badge-danger text-uppercase">Git</span>
-                                    <span class="badge badge-behance text-uppercase">python</span>    
-                                </br>
-                                <p class="card-text py-2 mb-0">Some quick example text to build on the card title and make up the bulk of the card's content preview .</p>
-                                <a href="#" class="btn btn-primary text-dark btn-icon mu-5">
-                                    <span class="btn-inner-icon"><span class="far fa-eye"></span></span>
-                                    <span class="btn-inner-text font-weight-bold">See project</span>
-                                </a>
-                                
-                                    <ul class="footer-links list-unstyled mt-4">
-                                    <li class="col-lg-12 d-block d-md-flex justify-content-around"> 
-                                        <a   href="https://gogoanime.so/fullmetal-alchemist-brotherhood-episode-11"> 
-                                        <img class="avatar-sm mr-2 img-fluid rounded-circle" src="img/profile-picture-2.jpg" alt="Moore avatar">yogesh kumar jha
-                                        </a>
-                                    </li>
-                                </ul>
-                               
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 text-center projectbx">
-                        <div class="card bg-primary shadow-soft border-light mb-4">
-                            <div class="card-body py-4">
-                                <img src="img/northwestern.svg" class="img-fluid image-sm mb-5" alt="ebay logo">
-                                <br>
-                                    <large class="text-muted mt-3" style="width: 200px;"><strong>Tech Stack : </strong></large>
-                                    <span class="badge badge-secondary text-uppercase">Django </span>
-                                    <span class="badge badge-dark text-uppercase">flask </span>
-                                    <span class="badge badge-secondary text-uppercase">python</span>
-                                    <span class="badge badge-success text-uppercase">ml</span>
-                                    <span class="badge badge-danger text-uppercase">Git</span>
-                                    <span class="badge badge-behance text-uppercase">python</span>    
-                                </br>
-                                <p class="card-text py-2 mb-0">Some quick example text to build on the card title and make up the bulk of the card's content preview .</p>
-                                <a href="#" class="btn btn-primary text-dark btn-icon mu-5">
-                                    <span class="btn-inner-icon"><span class="far fa-eye"></span></span>
-                                    <span class="btn-inner-text font-weight-bold">See project</span>
-                                </a>
-                                
-                                    <ul class="footer-links list-unstyled mt-4">
-                                    <li class="col-lg-12 d-block d-md-flex justify-content-around"> 
-                                        <a   href="https://gogoanime.so/fullmetal-alchemist-brotherhood-episode-11"> 
-                                        <img class="avatar-sm mr-2 img-fluid rounded-circle" src="img/profile-picture-2.jpg" alt="Moore avatar">yogesh kumar jha
-                                        </a>
-                                    </li>
-                                </ul>
-                               
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 text-center projectbx">
-                        <div class="card bg-primary shadow-soft border-light mb-4">
-                            <div class="card-body py-4">
-                                <img src="img/northwestern.svg" class="img-fluid image-sm mb-5" alt="ebay logo">
-                                <br>
-                                    <large class="text-muted mt-3" style="width: 200px;"><strong>Tech Stack : </strong></large>
-                                    <span class="badge badge-secondary text-uppercase">Django </span>
-                                    <span class="badge badge-dark text-uppercase">flask </span>
-                                    <span class="badge badge-secondary text-uppercase">python</span>
-                                    <span class="badge badge-success text-uppercase">ml</span>
-                                    <span class="badge badge-danger text-uppercase">Git</span>
-                                    <span class="badge badge-behance text-uppercase">python</span>    
-                                </br>
-                                <p class="card-text py-2 mb-0">Some quick example text to build on the card title and make up the bulk of the card's content preview .</p>
-                                <a href="#" class="btn btn-primary text-dark btn-icon mu-5">
-                                    <span class="btn-inner-icon"><span class="far fa-eye"></span></span>
-                                    <span class="btn-inner-text font-weight-bold">See project</span>
-                                </a>
-                                
-                                    <ul class="footer-links list-unstyled mt-4">
-                                    <li class="col-lg-12 d-block d-md-flex justify-content-around"> 
-                                        <a   href="https://gogoanime.so/fullmetal-alchemist-brotherhood-episode-11"> 
-                                        <img class="avatar-sm mr-2 img-fluid rounded-circle" src="img/profile-picture-2.jpg" alt="Moore avatar">yogesh kumar jha
-                                        </a>
-                                    </li>
-                                </ul>
-                               
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 text-center projectbx">
-                        <div class="card bg-primary shadow-soft border-light mb-4">
-                            <div class="card-body py-4">
-                                <img src="img/northwestern.svg" class="img-fluid image-sm mb-5" alt="ebay logo">
-                                <br>
-                                    <large class="text-muted mt-3" style="width: 200px;"><strong>Tech Stack : </strong></large>
-                                    <span class="badge badge-secondary text-uppercase">Django </span>
-                                    <span class="badge badge-dark text-uppercase">flask </span>
-                                    <span class="badge badge-secondary text-uppercase">python</span>
-                                    <span class="badge badge-success text-uppercase">ml</span>
-                                    <span class="badge badge-danger text-uppercase">Git</span>
-                                    <span class="badge badge-behance text-uppercase">python</span>    
-                                </br>
-                                <p class="card-text py-2 mb-0">Some quick example text to build on the card title and make up the bulk of the card's content preview .</p>
-                                <a href="#" class="btn btn-primary text-dark btn-icon mu-5">
-                                    <span class="btn-inner-icon"><span class="far fa-eye"></span></span>
-                                    <span class="btn-inner-text font-weight-bold">See project</span>
-                                </a>
-                                
-                                    <ul class="footer-links list-unstyled mt-4">
-                                    <li class="col-lg-12 d-block d-md-flex justify-content-around"> 
-                                        <a   href="https://gogoanime.so/fullmetal-alchemist-brotherhood-episode-11"> 
-                                        <img class="avatar-sm mr-2 img-fluid rounded-circle" src="img/profile-picture-2.jpg" alt="Moore avatar">yogesh kumar jha
-                                        </a>
-                                    </li>
-                                </ul>
-                               
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 text-center projectbx">
-                        <div class="card bg-primary shadow-soft border-light mb-4">
-                            <div class="card-body py-4">
-                                <img src="img/northwestern.svg" class="img-fluid image-sm mb-5" alt="ebay logo">
-                                <br>
-                                    <large class="text-muted mt-3" style="width: 200px;"><strong>Tech Stack : </strong></large>
-                                    <span class="badge badge-secondary text-uppercase">Django </span>
-                                    <span class="badge badge-dark text-uppercase">flask </span>
-                                    <span class="badge badge-secondary text-uppercase">python</span>
-                                    <span class="badge badge-success text-uppercase">ml</span>
-                                    <span class="badge badge-danger text-uppercase">Git</span>
-                                    <span class="badge badge-behance text-uppercase">python</span>    
-                                </br>
-                                <p class="card-text py-2 mb-0">Some quick example text to build on the card title and make up the bulk of the card's content preview .</p>
-                                <a href="#" class="btn btn-primary text-dark btn-icon mu-5">
-                                    <span class="btn-inner-icon"><span class="far fa-eye"></span></span>
-                                    <span class="btn-inner-text font-weight-bold">See project</span>
-                                </a>
-                                
-                                    <ul class="footer-links list-unstyled mt-4">
-                                    <li class="col-lg-12 d-block d-md-flex justify-content-around"> 
-                                        <a   href="https://gogoanime.so/fullmetal-alchemist-brotherhood-episode-11"> 
-                                        <img class="avatar-sm mr-2 img-fluid rounded-circle" src="img/profile-picture-2.jpg" alt="Moore avatar">yogesh kumar jha
-                                        </a>
-                                    </li>
-                                </ul>
-                               
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 text-center projectbx">
-                        <div class="card bg-primary shadow-soft border-light mb-4">
-                            <div class="card-body py-4">
-                                <img src="img/northwestern.svg" class="img-fluid image-sm mb-5" alt="ebay logo">
-                                <br>
-                                    <large class="text-muted mt-3" style="width: 200px;"><strong>Tech Stack : </strong></large>
-                                    <span class="badge badge-secondary text-uppercase">Django </span>
-                                    <span class="badge badge-dark text-uppercase">flask </span>
-                                    <span class="badge badge-secondary text-uppercase">python</span>
-                                    <span class="badge badge-success text-uppercase">ml</span>
-                                    <span class="badge badge-danger text-uppercase">Git</span>
-                                    <span class="badge badge-behance text-uppercase">python</span>    
-                                </br>
-                                <p class="card-text py-2 mb-0">Some quick example text to build on the card title and make up the bulk of the card's content preview .</p>
-                                <a href="#" class="btn btn-primary text-dark btn-icon mu-5">
-                                    <span class="btn-inner-icon"><span class="far fa-eye"></span></span>
-                                    <span class="btn-inner-text font-weight-bold">See project</span>
-                                </a>
-                                
-                                    <ul class="footer-links list-unstyled mt-4">
-                                    <li class="col-lg-12 d-block d-md-flex justify-content-around"> 
-                                        <a   href="https://gogoanime.so/fullmetal-alchemist-brotherhood-episode-11"> 
-                                        <img class="avatar-sm mr-2 img-fluid rounded-circle" src="img/profile-picture-2.jpg" alt="Moore avatar">yogesh kumar jha
-                                        </a>
-                                    </li>
-                                </ul>
-                               
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 text-center projectbx">
-                        <div class="card bg-primary shadow-soft border-light mb-4">
-                            <div class="card-body py-4">
-                                <img src="img/northwestern.svg" class="img-fluid image-sm mb-5" alt="ebay logo">
-                                <br>
-                                    <large class="text-muted mt-3" style="width: 200px;"><strong>Tech Stack : </strong></large>
-                                    <span class="badge badge-secondary text-uppercase">Django </span>
-                                    <span class="badge badge-dark text-uppercase">flask </span>
-                                    <span class="badge badge-secondary text-uppercase">python</span>
-                                    <span class="badge badge-success text-uppercase">ml</span>
-                                    <span class="badge badge-danger text-uppercase">Git</span>
-                                    <span class="badge badge-behance text-uppercase">python</span>    
-                                </br>
-                                <p class="card-text py-2 mb-0">Some quick example text to build on the card title and make up the bulk of the card's content preview .</p>
-                                <a href="#" class="btn btn-primary text-dark btn-icon mu-5">
-                                    <span class="btn-inner-icon"><span class="far fa-eye"></span></span>
-                                    <span class="btn-inner-text font-weight-bold">See project</span>
-                                </a>
-                                
-                                    <ul class="footer-links list-unstyled mt-4">
-                                    <li class="col-lg-12 d-block d-md-flex justify-content-around"> 
-                                        <a   href="https://gogoanime.so/fullmetal-alchemist-brotherhood-episode-11"> 
-                                        <img class="avatar-sm mr-2 img-fluid rounded-circle" src="img/profile-picture-2.jpg" alt="Moore avatar">yogesh kumar jha
-                                        </a>
-                                    </li>
-                                </ul>
-                               
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 text-center projectbx">
-                        <div class="card bg-primary shadow-soft border-light mb-4">
-                            <div class="card-body py-4">
-                                <img src="img/northwestern.svg" class="img-fluid image-sm mb-5" alt="ebay logo">
-                                <br>
-                                    <large class="text-muted mt-3" style="width: 200px;"><strong>Tech Stack : </strong></large>
-                                    <span class="badge badge-secondary text-uppercase">Django </span>
-                                    <span class="badge badge-dark text-uppercase">flask </span>
-                                    <span class="badge badge-secondary text-uppercase">python</span>
-                                    <span class="badge badge-success text-uppercase">ml</span>
-                                    <span class="badge badge-danger text-uppercase">Git</span>
-                                    <span class="badge badge-behance text-uppercase">python</span>    
-                                </br>
-                                <p class="card-text py-2 mb-0">Some quick example text to build on the card title and make up the bulk of the card's content preview .</p>
-                                <a href="#" class="btn btn-primary text-dark btn-icon mu-5">
-                                    <span class="btn-inner-icon"><span class="far fa-eye"></span></span>
-                                    <span class="btn-inner-text font-weight-bold">See project</span>
-                                </a>
-                                
-                                    <ul class="footer-links list-unstyled mt-4">
-                                    <li class="col-lg-12 d-block d-md-flex justify-content-around"> 
-                                        <a   href="https://gogoanime.so/fullmetal-alchemist-brotherhood-episode-11"> 
-                                        <img class="avatar-sm mr-2 img-fluid rounded-circle" src="img/profile-picture-2.jpg" alt="Moore avatar">yogesh kumar jha
-                                        </a>
-                                    </li>
-                                </ul>
-                               
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 text-center projectbx">
-                        <div class="card bg-primary shadow-soft border-light mb-4">
-                            <div class="card-body py-4">
-                                <img src="img/northwestern.svg" class="img-fluid image-sm mb-5" alt="ebay logo">
-                                <br>
-                                    <large class="text-muted mt-3" style="width: 200px;"><strong>Tech Stack : </strong></large>
-                                    <span class="badge badge-secondary text-uppercase">Django </span>
-                                    <span class="badge badge-dark text-uppercase">flask </span>
-                                    <span class="badge badge-secondary text-uppercase">python</span>
-                                    <span class="badge badge-success text-uppercase">ml</span>
-                                    <span class="badge badge-danger text-uppercase">Git</span>
-                                    <span class="badge badge-behance text-uppercase">python</span>    
-                                </br>
-                                <p class="card-text py-2 mb-0">Some quick example text to build on the card title and make up the bulk of the card's content preview .</p>
-                                <a href="#" class="btn btn-primary text-dark btn-icon mu-5">
-                                    <span class="btn-inner-icon"><span class="far fa-eye"></span></span>
-                                    <span class="btn-inner-text font-weight-bold">See project</span>
-                                </a>
-                                
-                                    <ul class="footer-links list-unstyled mt-4">
-                                    <li class="col-lg-12 d-block d-md-flex justify-content-around"> 
-                                        <a   href="https://gogoanime.so/fullmetal-alchemist-brotherhood-episode-11"> 
-                                        <img class="avatar-sm mr-2 img-fluid rounded-circle" src="img/profile-picture-2.jpg" alt="Moore avatar">yogesh kumar jha
-                                        </a>
-                                    </li>
-                                </ul>
-                               
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 text-center projectbx">
-                        <div class="card bg-primary shadow-soft border-light mb-4">
-                            <div class="card-body py-4">
-                                <img src="img/northwestern.svg" class="img-fluid image-sm mb-5" alt="ebay logo">
-                                <br>
-                                    <large class="text-muted mt-3" style="width: 200px;"><strong>Tech Stack : </strong></large>
-                                    <span class="badge badge-secondary text-uppercase">Django </span>
-                                    <span class="badge badge-dark text-uppercase">flask </span>
-                                    <span class="badge badge-secondary text-uppercase">python</span>
-                                    <span class="badge badge-success text-uppercase">ml</span>
-                                    <span class="badge badge-danger text-uppercase">Git</span>
-                                    <span class="badge badge-behance text-uppercase">python</span>    
-                                </br>
-                                <p class="card-text py-2 mb-0">Some quick example text to build on the card title and make up the bulk of the card's content preview .</p>
-                                <a href="#" class="btn btn-primary text-dark btn-icon mu-5">
-                                    <span class="btn-inner-icon"><span class="far fa-eye"></span></span>
-                                    <span class="btn-inner-text font-weight-bold">See project</span>
-                                </a>
-                                
-                                    <ul class="footer-links list-unstyled mt-4">
-                                    <li class="col-lg-12 d-block d-md-flex justify-content-around"> 
-                                        <a   href="https://gogoanime.so/fullmetal-alchemist-brotherhood-episode-11"> 
-                                        <img class="avatar-sm mr-2 img-fluid rounded-circle" src="img/profile-picture-2.jpg" alt="Moore avatar">yogesh kumar jha
-                                        </a>
-                                    </li>
-                                </ul>
-                               
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 text-center projectbx">
-                        <div class="card bg-primary shadow-soft border-light mb-4">
-                            <div class="card-body py-4">
-                                <img src="img/northwestern.svg" class="img-fluid image-sm mb-5" alt="ebay logo">
-                                <br>
-                                    <large class="text-muted mt-3" style="width: 200px;"><strong>Tech Stack : </strong></large>
-                                    <span class="badge badge-secondary text-uppercase">Django </span>
-                                    <span class="badge badge-dark text-uppercase">flask </span>
-                                    <span class="badge badge-secondary text-uppercase">python</span>
-                                    <span class="badge badge-success text-uppercase">ml</span>
-                                    <span class="badge badge-danger text-uppercase">Git</span>
-                                    <span class="badge badge-behance text-uppercase">python</span>    
-                                </br>
-                                <p class="card-text py-2 mb-0">Some quick example text to build on the card title and make up the bulk of the card's content preview .</p>
-                                <a href="#" class="btn btn-primary text-dark btn-icon mu-5">
-                                    <span class="btn-inner-icon"><span class="far fa-eye"></span></span>
-                                    <span class="btn-inner-text font-weight-bold">See project</span>
-                                </a>
-                                
-                                    <ul class="footer-links list-unstyled mt-4">
-                                    <li class="col-lg-12 d-block d-md-flex justify-content-around"> 
-                                        <a   href="https://gogoanime.so/fullmetal-alchemist-brotherhood-episode-11"> 
-                                        <img class="avatar-sm mr-2 img-fluid rounded-circle" src="img/profile-picture-2.jpg" alt="Moore avatar">yogesh kumar jha
-                                        </a>
-                                    </li>
-                                </ul>
-                               
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 text-center projectbx">
-                        <div class="card bg-primary shadow-soft border-light mb-4">
-                            <div class="card-body py-4">
-                                <img src="img/northwestern.svg" class="img-fluid image-sm mb-5" alt="ebay logo">
-                                <br>
-                                    <large class="text-muted mt-3" style="width: 200px;"><strong>Tech Stack : </strong></large>
-                                    <span class="badge badge-secondary text-uppercase">Django </span>
-                                    <span class="badge badge-dark text-uppercase">flask </span>
-                                    <span class="badge badge-secondary text-uppercase">python</span>
-                                    <span class="badge badge-success text-uppercase">ml</span>
-                                    <span class="badge badge-danger text-uppercase">Git</span>
-                                    <span class="badge badge-behance text-uppercase">python</span>    
-                                </br>
-                                <p class="card-text py-2 mb-0">Some quick example text to build on the card title and make up the bulk of the card's content preview .</p>
-                                <a href="#" class="btn btn-primary text-dark btn-icon mu-5">
-                                    <span class="btn-inner-icon"><span class="far fa-eye"></span></span>
-                                    <span class="btn-inner-text font-weight-bold">See project</span>
-                                </a>
-                                
-                                    <ul class="footer-links list-unstyled mt-4">
-                                    <li class="col-lg-12 d-block d-md-flex justify-content-around"> 
-                                        <a   href="https://gogoanime.so/fullmetal-alchemist-brotherhood-episode-11"> 
-                                        <img class="avatar-sm mr-2 img-fluid rounded-circle" src="img/profile-picture-2.jpg" alt="Moore avatar">yogesh kumar jha
-                                        </a>
-                                    </li>
-                                </ul>
-                               
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 text-center projectbx">
-                        <div class="card bg-primary shadow-soft border-light mb-4">
-                            <div class="card-body py-4">
-                                <img src="img/northwestern.svg" class="img-fluid image-sm mb-5" alt="ebay logo">
-                                <br>
-                                    <large class="text-muted mt-3" style="width: 200px;"><strong>Tech Stack : </strong></large>
-                                    <span class="badge badge-secondary text-uppercase">Django </span>
-                                    <span class="badge badge-dark text-uppercase">flask </span>
-                                    <span class="badge badge-secondary text-uppercase">python</span>
-                                    <span class="badge badge-success text-uppercase">ml</span>
-                                    <span class="badge badge-danger text-uppercase">Git</span>
-                                    <span class="badge badge-behance text-uppercase">python</span>    
-                                </br>
-                                <p class="card-text py-2 mb-0">Some quick example text to build on the card title and make up the bulk of the card's content preview .</p>
-                                <a href="#" class="btn btn-primary text-dark btn-icon mu-5">
-                                    <span class="btn-inner-icon"><span class="far fa-eye"></span></span>
-                                    <span class="btn-inner-text font-weight-bold">See project</span>
-                                </a>
-                                
-                                    <ul class="footer-links list-unstyled mt-4">
-                                    <li class="col-lg-12 d-block d-md-flex justify-content-around"> 
-                                        <a   href="https://gogoanime.so/fullmetal-alchemist-brotherhood-episode-11"> 
-                                        <img class="avatar-sm mr-2 img-fluid rounded-circle" src="img/profile-picture-2.jpg" alt="Moore avatar">yogesh kumar jha
-                                        </a>
-                                    </li>
-                                </ul>
-                               
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 text-center projectbx">
-                        <div class="card bg-primary shadow-soft border-light mb-4">
-                            <div class="card-body py-4">
-                                <img src="img/northwestern.svg" class="img-fluid image-sm mb-5" alt="ebay logo">
-                                <br>
-                                    <large class="text-muted mt-3" style="width: 200px;"><strong>Tech Stack : </strong></large>
-                                    <span class="badge badge-secondary text-uppercase">Django </span>
-                                    <span class="badge badge-dark text-uppercase">flask </span>
-                                    <span class="badge badge-secondary text-uppercase">python</span>
-                                    <span class="badge badge-success text-uppercase">ml</span>
-                                    <span class="badge badge-danger text-uppercase">Git</span>
-                                    <span class="badge badge-behance text-uppercase">python</span>    
-                                </br>
-                                <p class="card-text py-2 mb-0">Some quick example text to build on the card title and make up the bulk of the card's content preview .</p>
-                                <a href="#" class="btn btn-primary text-dark btn-icon mu-5">
-                                    <span class="btn-inner-icon"><span class="far fa-eye"></span></span>
-                                    <span class="btn-inner-text font-weight-bold">See project</span>
-                                </a>
-                                
-                                    <ul class="footer-links list-unstyled mt-4">
-                                    <li class="col-lg-12 d-block d-md-flex justify-content-around"> 
-                                        <a   href="https://gogoanime.so/fullmetal-alchemist-brotherhood-episode-11"> 
-                                        <img class="avatar-sm mr-2 img-fluid rounded-circle" src="img/profile-picture-2.jpg" alt="Moore avatar">yogesh kumar jha
-                                        </a>
-                                    </li>
-                                </ul>
-                               
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 text-center projectbx">
-                        <div class="card bg-primary shadow-soft border-light mb-4">
-                            <div class="card-body py-4">
-                                <img src="img/northwestern.svg" class="img-fluid image-sm mb-5" alt="ebay logo">
-                                <br>
-                                    <large class="text-muted mt-3" style="width: 200px;"><strong>Tech Stack : </strong></large>
-                                    <span class="badge badge-secondary text-uppercase">Django </span>
-                                    <span class="badge badge-dark text-uppercase">flask </span>
-                                    <span class="badge badge-secondary text-uppercase">python</span>
-                                    <span class="badge badge-success text-uppercase">ml</span>
-                                    <span class="badge badge-danger text-uppercase">Git</span>
-                                    <span class="badge badge-behance text-uppercase">python</span>    
-                                </br>
-                                <p class="card-text py-2 mb-0">Some quick example text to build on the card title and make up the bulk of the card's content preview .</p>
-                                <a href="#" class="btn btn-primary text-dark btn-icon mu-5">
-                                    <span class="btn-inner-icon"><span class="far fa-eye"></span></span>
-                                    <span class="btn-inner-text font-weight-bold">See project</span>
-                                </a>
-                                
-                                    <ul class="footer-links list-unstyled mt-4">
-                                    <li class="col-lg-12 d-block d-md-flex justify-content-around"> 
-                                        <a   href="https://gogoanime.so/fullmetal-alchemist-brotherhood-episode-11"> 
-                                        <img class="avatar-sm mr-2 img-fluid rounded-circle" src="img/profile-picture-2.jpg" alt="Moore avatar">yogesh kumar jha
-                                        </a>
-                                    </li>
-                                </ul>
-                               
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 text-center projectbx">
-                        <div class="card bg-primary shadow-soft border-light mb-4">
-                            <div class="card-body py-4">
-                                <img src="img/northwestern.svg" class="img-fluid image-sm mb-5" alt="ebay logo">
-                                <br>
-                                    <large class="text-muted mt-3" style="width: 200px;"><strong>Tech Stack : </strong></large>
-                                    <span class="badge badge-secondary text-uppercase">Django </span>
-                                    <span class="badge badge-dark text-uppercase">flask </span>
-                                    <span class="badge badge-secondary text-uppercase">python</span>
-                                    <span class="badge badge-success text-uppercase">ml</span>
-                                    <span class="badge badge-danger text-uppercase">Git</span>
-                                    <span class="badge badge-behance text-uppercase">python</span>    
-                                </br>
-                                <p class="card-text py-2 mb-0">Some quick example text to build on the card title and make up the bulk of the card's content preview .</p>
-                                <a href="#" class="btn btn-primary text-dark btn-icon mu-5">
-                                    <span class="btn-inner-icon"><span class="far fa-eye"></span></span>
-                                    <span class="btn-inner-text font-weight-bold">See project</span>
-                                </a>
-                                
-                                    <ul class="footer-links list-unstyled mt-4">
-                                    <li class="col-lg-12 d-block d-md-flex justify-content-around"> 
-                                        <a   href="https://gogoanime.so/fullmetal-alchemist-brotherhood-episode-11"> 
-                                        <img class="avatar-sm mr-2 img-fluid rounded-circle" src="img/profile-picture-2.jpg" alt="Moore avatar">yogesh kumar jha
-                                        </a>
-                                    </li>
-                                </ul>
-                               
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 text-center projectbx">
-                        <div class="card bg-primary shadow-soft border-light mb-4">
-                            <div class="card-body py-4">
-                                <img src="img/northwestern.svg" class="img-fluid image-sm mb-5" alt="ebay logo">
-                                <br>
-                                    <large class="text-muted mt-3" style="width: 200px;"><strong>Tech Stack : </strong></large>
-                                    <span class="badge badge-secondary text-uppercase">Django </span>
-                                    <span class="badge badge-dark text-uppercase">flask </span>
-                                    <span class="badge badge-secondary text-uppercase">python</span>
-                                    <span class="badge badge-success text-uppercase">ml</span>
-                                    <span class="badge badge-danger text-uppercase">Git</span>
-                                    <span class="badge badge-behance text-uppercase">python</span>    
-                                </br>
-                                <p class="card-text py-2 mb-0">Some quick example text to build on the card title and make up the bulk of the card's content preview .</p>
-                                <a href="#" class="btn btn-primary text-dark btn-icon mu-5">
-                                    <span class="btn-inner-icon"><span class="far fa-eye"></span></span>
-                                    <span class="btn-inner-text font-weight-bold">See project</span>
-                                </a>
-                                
-                                    <ul class="footer-links list-unstyled mt-4">
-                                    <li class="col-lg-12 d-block d-md-flex justify-content-around"> 
-                                        <a   href="https://gogoanime.so/fullmetal-alchemist-brotherhood-episode-11"> 
-                                        <img class="avatar-sm mr-2 img-fluid rounded-circle" src="img/profile-picture-2.jpg" alt="Moore avatar">yogesh kumar jha
-                                        </a>
-                                    </li>
-                                </ul>
-                               
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 text-center projectbx">
-                        <div class="card bg-primary shadow-soft border-light mb-4">
-                            <div class="card-body py-4">
-                                <img src="img/northwestern.svg" class="img-fluid image-sm mb-5" alt="ebay logo">
-                                <br>
-                                    <large class="text-muted mt-3" style="width: 200px;"><strong>Tech Stack : </strong></large>
-                                    <span class="badge badge-secondary text-uppercase">Django </span>
-                                    <span class="badge badge-dark text-uppercase">flask </span>
-                                    <span class="badge badge-secondary text-uppercase">python</span>
-                                    <span class="badge badge-success text-uppercase">ml</span>
-                                    <span class="badge badge-danger text-uppercase">Git</span>
-                                    <span class="badge badge-behance text-uppercase">python</span>    
-                                </br>
-                                <p class="card-text py-2 mb-0">Some quick example text to build on the card title and make up the bulk of the card's content preview .</p>
-                                <a href="#" class="btn btn-primary text-dark btn-icon mu-5">
-                                    <span class="btn-inner-icon"><span class="far fa-eye"></span></span>
-                                    <span class="btn-inner-text font-weight-bold">See project</span>
-                                </a>
-                                
-                                    <ul class="footer-links list-unstyled mt-4">
-                                    <li class="col-lg-12 d-block d-md-flex justify-content-around"> 
-                                        <a   href="https://gogoanime.so/fullmetal-alchemist-brotherhood-episode-11"> 
-                                        <img class="avatar-sm mr-2 img-fluid rounded-circle" src="img/profile-picture-2.jpg" alt="Moore avatar">yogesh kumar jha
-                                        </a>
-                                    </li>
-                                </ul>
-                               
-                            </div>
-                        </div>
-                    </div>
+                    
+                   
+                    
+                    
                     
                     
                    
@@ -724,93 +132,79 @@
 
 
 
- <footer class="d-flex pb-5 pt-6 pt-md-7 border-top border-light bg-primary" id="contact">
-    <div class="container">
-        <div class="row">
-            <div class="col-12 col-lg-3 mb-5 mb-lg-0">
-                <h3 style="font-family: 'Audiowide';font-size: 60px;">JWOC</h3> <br><p style="font-family: 'Montserrat Subrayada', sans-serif;font-size:15px;color: #696969;">JGEC Winter of Codes</p>
-                
-            </div>
-
-
-
-            <!-- <div class="col-6 col-lg-2 mb-5 mb-lg-0">
-                <h5>Themesberg</h5>
-                <ul class="footer-links list-unstyled mt-2">
-                    <li class="mb-1"><a class="p-2" target="_blank" href="https://themesberg.com/blog">Blog</a></li>
-                    <li class="mb-1"><a class="p-2" target="_blank" href="https://themesberg.com/products">Products</a></li>
-                    <li class="mb-1"><a class="p-2" target="_blank" href="https://themesberg.com/about">About Us</a></li>
-                    <li><a class="p-2" target="_blank" href="https://themesberg.com/contact">Contact Us</a></li>
-                </ul>
-            </div> -->
-
-            <div class="col-12 col-lg-6 mb-5 mb-lg-0" style="border-left: 1px solid #D3D3D3; 
-            height: 250px; ">
-                <h5>Contact Us</h5>
-                <br><p>Feel free to contact us we will love to hear from you. For any queries mail us [email protected].
- Join our discord channel.
- For latest updates follow us on:</p><br>
-                <ul class="d-flex list-unstyled mb-5 mb-lg-0">
-                    <!-- <li class="mr-2">
-                        <a href="https://twitter.com/themesberg" target="_blank" class="btn btn-icon-only btn-pill btn-primary" aria-label="twitter social link"
-                        data-toggle="tooltip" data-placement="top" title="Follow @themesberg on Twitter">
-                            <span aria-hidden="true" class="fab fa-twitter"></span>
-                        </a>
-                    </li> -->
-                    <li class="mr-2">
-                        <a href="https://www.facebook.com/jwoc2k20/" target="_blank" class="btn btn-icon-only btn-pill btn-primary" aria-label="facebook social link"
-                        data-toggle="tooltip" data-placement="top" title="Like @jwoc2k20 on Facebook">
-                            <span aria-hidden="true" class="fab fa-facebook"></span>
-                        </a>
-                    </li>
-                    <li class="mr-2">
-                        <a href="https://github.com/jwoc" target="_blank" class="btn btn-icon-only btn-pill btn-primary" aria-label="github social link"
-                        data-toggle="tooltip" data-placement="top" title="Open source projects">
-                            <span aria-hidden="true" class="fab fa-github"></span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://discord.com/download" target="_blank" class="btn btn-icon-only btn-pill btn-primary" aria-label="dribbble social link"
-                        data-toggle="tooltip" data-placement="top" title="Follow us on Discord">
-                            <span aria-hidden="true" class="fab fa-discord"></span>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-
-
-            <div class="col-12 col-lg-3 mb-5 mb-lg-0" style="border-left: 1px solid #D3D3D3; 
-            height: 250px; ">
-                <h5>Sponsors</h5>
-                <p class="text-gray font-small mt-2">Cheers to our sponsors.</p>
-                <ul class="footer-links list-unstyled mt-2">
-                    <li class="mb-1"><a class="p-2" href="https://themesberg.com/docs/pixel-bootstrap/getting-started/overview/" target="_blank">GDG Siliguri
-                        </a>
-                    </li>
-                    <li class="mb-1">
-                        <a class="p-2" href="https://themesberg.com/docs/pixel-bootstrap/getting-started/changelog" target="_blank">Github</a>
-                    </li>
-                    <li class="mb-1">
-                        <a class="p-2" target="_blank" href="https://themesberg.com/licensing">Progate</a>
-                    </li>
+    <footer class="d-flex pb-5 pt-6 pt-md-7 border-top border-light bg-primary" id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-3 mb-5 mb-lg-0">
+                    <h3 style="font-size: 60px;"><strong>JWOC</strong></h3> <br><p style="font-family: 'Montserrat Subrayada', sans-serif;font-size:15px;color: #696969;">JGEC Winter of Code</p>
                     
-                </ul>
                 </div>
-        </div>
-        <hr class="my-5">
-        <div class="row">
-            <div class="col">
-                <a href="https://jwoc.com" target="_blank" class="d-flex justify-content-center">
-                    <img src="./assets/img/jwoc.jpeg" height="25" class="mb-3" alt="jwoc Logo">
-                </a>
-            <div class="d-flex text-center justify-content-center align-items-center" role="contentinfo">
-                <p class="font-weight-normal font-small mb-0">Copyright © JWOC
-                    <span class="current-year">2020</span>. All rights reserved.</p>
+    
+    
+    
+                <!-- <div class="col-6 col-lg-2 mb-5 mb-lg-0">
+                    <h5>Themesberg</h5>
+                    <ul class="footer-links list-unstyled mt-2">
+                        <li class="mb-1"><a class="p-2" target="_blank" href="https://themesberg.com/blog">Blog</a></li>
+                        <li class="mb-1"><a class="p-2" target="_blank" href="https://themesberg.com/products">Products</a></li>
+                        <li class="mb-1"><a class="p-2" target="_blank" href="https://themesberg.com/about">About Us</a></li>
+                        <li><a class="p-2" target="_blank" href="https://themesberg.com/contact">Contact Us</a></li>
+                    </ul>
+                </div> -->
+    
+                <div class="col-12 col-lg-6 mb-5 mb-lg-0" style="border-left: 1px solid #D3D3D3; 
+                height: 250px; ">
+                    <h5>Contact Us</h5>
+                    <br><p>Feel free to contact us we will love to hear from you. For any queries mail to <a href = "mailto: contact@jwoc2k20.tech">contact@jwoc2k20.tech</a>.
+       Join our discord channel.  For latest updates follow us on:</p><br>
+                    <ul class="d-flex list-unstyled mb-5 mb-lg-0">
+                        <!-- <li class="mr-2">
+                            <a href="https://twitter.com/themesberg" target="_blank" class="btn btn-icon-only btn-pill btn-primary" aria-label="twitter social link"
+                            data-toggle="tooltip" data-placement="top" title="Follow @themesberg on Twitter">
+                                <span aria-hidden="true" class="fab fa-twitter"></span>
+                            </a>
+                        </li> -->
+                        <li class="mr-2">
+                            <a href="https://www.facebook.com/jwoc2k20/" target="_blank" class="btn btn-icon-only btn-pill btn-primary" aria-label="facebook social link"
+                            data-toggle="tooltip" data-placement="top" title="Like @jwoc2k20 on Facebook">
+                                <span aria-hidden="true" class="fab fa-facebook"></span>
+                            </a>
+                        </li>
+                        <li class="mr-2">
+                            <a href="https://github.com/JGEC-Winter-of-Code" target="_blank" class="btn btn-icon-only btn-pill btn-primary" aria-label="github social link"
+                            data-toggle="tooltip" data-placement="top" title="Open source projects">
+                                <span aria-hidden="true" class="fab fa-github"></span>
+                            </a>
+                        </li>
+                        <li class="mr-2">
+                            <a href="https://discord.com/download" target="_blank" class="btn btn-icon-only btn-pill btn-primary" aria-label="dribbble social link"
+                            data-toggle="tooltip" data-placement="top" title="Follow us on Discord">
+                                <span aria-hidden="true" class="fab fa-discord"></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/company/jwoc/" target="_blank" class="btn btn-icon-only btn-pill btn-primary" aria-label="dribbble social link"
+                            data-toggle="tooltip" data-placement="top" title="Follow us on Linkedin">
+                                <span aria-hidden="true" class="fab fa-linkedin"></span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="my-5">
+            <div class="row">
+                <div class="col">
+                    <a href="index.html" target="_blank" class="d-flex justify-content-center">
+                        <img src="assets/img/team/logo.png" height="50" class="mb-3" alt="jwoc Logo">
+                    </a>
+                <div class="d-flex text-center justify-content-center align-items-center" role="contentinfo">
+                    <p class="font-weight-normal font-small mb-0">Copyright © JWOC
+                        <span class="current-year">2020</span>. All rights reserved.</p>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
- </footer>
+     </footer>
  <script src="ext.js" language="javascript"></script>
     <!-- Core -->
 
