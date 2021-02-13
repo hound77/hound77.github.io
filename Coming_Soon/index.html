@@ -8,62 +8,364 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <link href="http://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" type="text/css" href="demo/css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="demo/css/coming_soon.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous" />
     <link rel="icon" href="demo/img/logo(1).png">
-	<title>Leaderboard coming_soon</title>
+	<title>Leaderboard </title>
+    <h1>JWoC Leaderboard</h1>
 </head>
 
+
+<style>
+    body {
+        padding: 0px;
+        margin: 0;
+        display: flexbox;
+        background-color: black;
+        justify-content: center;
+        align-items: center;
+        height: 90vh;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    
+    .table-box {
+    
+        max-width: 100%;
+        height: 80%;
+        overflow-y: scroll;
+        margin-top: 1.5cm;
+        border: 2px solid #bdc3c7;
+        box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2), -1px -1px 8px rgba(0, 0, 0, 0.2);
+    }
+    table{
+        width: 100%;
+    }
+    
+    tr {
+        transition: all .2s ease-in;
+        color: #1db954;
+        cursor: pointer;
+    }
+    
+    th,
+    td {
+        padding: 15px;
+        text-align: center;
+        border-bottom: 1px solid #ddd;
+    }
+    th{
+        position: sticky;
+        top: 0;
+    }
+    
+    #header {
+        background-color: #1db954;
+        color: #fff;
+    }
+    
+    h1 {
+        font-weight: 300;
+        text-align: center;
+        background-color: #1db954;
+        color: #fff;
+        padding: 10px 0px;
+    }
+    
+    tr:hover {
+        background-color: #1db954;
+        color: #ffffff;
+        transform: scale(1.02);
+        box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2), -1px -1px 8px rgba(0, 0, 0, 0.2);
+    }
+    
+    @media only screen and (max-width: 768px) {
+        table {
+            width: 90%;
+        }
+    }
+</style>
+
 <body>
-    <div  class="centerdiv">
-    <a href="https://www.facebook.com/jwoc2k20" target="_blank">
-        <i class="fa fa-facebook fa-3x"></i>
-    </a>
 
-    <a href="https://www.linkedin.com/company/jwoc/" target="_blank">
-        <i class="fa fa-linkedin fa-3x"></i>
-    </a>
-  </div>
-		<div class="section">
-			<div class="section">
-				<div id="particles-js">
-                    <break>
-					<h1 style="color:white"><b>LEADER BOARD</b></h1>
-					<h1 style="color:white"><b> COMMENCING SOON</b></h1>
-					<hr>
-						
-				</div>
-			</div>
-		</div>
+    
+    <hr>
+<div class="table-box">
+    <table>
+        <tr id="header">
+            <th>Rank</th>
+            <th>Name</th>
+            <th>Points</th>
+        </tr>
+            <tr>
+                <td>1</td>
+                <td>Niloy Sikdar</td>
+                <td>62</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>KarunKarthik</td>
+                <td>55</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Anushruti</td>
+                <td>22</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Sahil Saha</td>
+                <td>19</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Ashutosh Agarwal</td>
+                <td>17</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>Swatilekha-Roy</td>
+                <td>16</td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>S Harshita</td>
+                <td>16</td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td>mehabhalodiya</td>
+                <td>14</td>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td>Nitesh kumar</td>
+                <td>13</td>
+            </tr>
+            <tr>
+                <td>10</td>
+                <td>V Nikhita</td>
+                <td>10</td>
+            </tr>
+            <tr>
+                <td>11</td>
+                <td>Subhradeep Chakraborty</td>
+                <td>9</td>
+            </tr>
+            <tr>
+                <td>12</td>
+                <td>Anubhab Sarkar</td>
+                <td>9</td>
+            </tr>
+            <tr>
+                <td>13</td>
+                <td>Ankit Kumar Ghosh</td>
+                <td>9</td>
+            </tr>
+            <tr>
+                <td>14</td>
+                <td>Abhra</td>
+                <td>9</td>
+            </tr>
+            <tr>
+                <td>15</td>
+                <td>Mayank Ujawane</td>
+                <td>8</td>
+            </tr>
+            <tr>
+                <td>16</td>
+                <td>Tushar jain</td>
+                <td>7</td>
+            </tr>
+            <tr>
+                <td>17</td>
+                <td>Niveditha Palli</td>
+                <td>7</td>
+            </tr>
+            <tr>
+                <td>18</td>
+                <td>Syed Mazharaliraza</td>
+                <td>7</td>
+            </tr>
+            <tr>
+                <td>19</td>
+                <td>Nilisha Jaiswal</td>
+                <td>7</td>
+            </tr>
+            <tr>
+                <td>20</td>
+                <td>Sumit Chauhan</td>
+                <td>6</td>
+            </tr>
+            <tr>
+                <td>21</td>
+                <td>sagnik1511</td>
+                <td>6</td>
+            </tr>
+            <tr>
+                <td>22</td>
+                <td>Sandip Dutta</td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td>23</td>
+                <td>Ayush Kumar</td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td>24</td>
+                <td>Aniruddha Routh</td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td>25</td>
+                <td>Soumyabrata Bairagi</td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td>26</td>
+                <td>Anurag Nayak</td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td>27</td>
+                <td>Shagun Goyal</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td>28</td>
+                <td>Nisha yadav</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td>29</td>
+                <td>Ajoy Naskar</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td>30</td>
+                <td>kanhaiya lal</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>31</td>
+                <td>Monojit Chakraborty</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>32</td>
+                <td>janhabi mukherjee </td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>33</td>
+                <td>Sagnik Mitra</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>34</td>
+                <td>Hari Ram</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>35</td>
+                <td>Samrat</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>36</td>
+                <td>BlueBlaze6335</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>37</td>
+                <td>Saikat Mukherjee</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>38</td>
+                <td>Aman Prakash Jha</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>39</td>
+                <td>Dibyajyoti Mondal</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>40</td>
+                <td>Raman thakur</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td>41</td>
+                <td>Lucky kumari</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td>42</td>
+                <td>Ansuman Behera</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>43</td>
+                <td>Priyadarshini Kumari</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>43</td>
+                <td>Uttu2</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>45</td>
+                <td>pankaj kumar bijarniya</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>46</td>
+                <td>Sneha Baser</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>47</td>
+                <td>Swapna Devi</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>48</td>
+                <td>shreetama mukherjee</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>49</td>
+                <td>Shreya Paul</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>50</td>
+                <td>Sauparna Gupta</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>52</td>
+                <td>Sumit Chauhan</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>53</td>
+                <td>"Vinamrata1086</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>54</td>
+                <td>Malvika Bhargava</td>
+                <td>1</td>
+            </tr>
+        </table>
 
 
+</body>
 
-<!-- footer section -->
-
-
-
-
-
-
-
-<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
-<script type="text/javascript" src="demo/js/kinetic.js"></script>
-<script type="text/javascript" src="jquery.final-countdown.js"></script>
-<script type="text/javascript" src="particles.js"></script>
-<script type="text/javascript" src="app.js"></script>
-<script type="text/javascript" src="jquery-3.2.1.min.js"></script>
-<script type="text/javascript">  
-    $('document').ready(function() {
-        'use strict';
-        
-    	$('.countdown').final_countdown({
-            'start': 2062139200,
-            'end': 2088461320,
-            'now': 2087461319        
-        });
-    });
-</script>
+</html>
 
 </body>
 </html>
